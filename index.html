@@ -27,14 +27,14 @@
       <nav>
         <div aria-role="menu" class="flex flex-row gap-6">
           <a
-          href="#servicos"
+            href="#servicos"
             title="Serviços"
             class="flex gap-2 rounded hover:bg-[#D9D9D90F] p-2 cursor-pointer transition duration-300"
             ><i data-lucide="cpu"></i
             ><span class="hidden md:inline">Serviços</span></a
           >
           <a
-          href="#contato"
+            href="#contato"
             title="Contato"
             class="flex gap-2 rounded hover:bg-[#D9D9D90F] p-2 cursor-pointer"
             ><i data-lucide="message-circle"></i
@@ -44,8 +44,8 @@
       </nav>
     </header>
 
-    <main class="w-full flex flex-col items-center">
-      <section class="relative min-h-80 md:h-svh w-full">
+    <main class="min-h-dvh w-full flex flex-col items-center">
+      <section class="relative min-h-96 md:h-dvh w-full">
         <img
           class="absolute h-full w-full select-none object-cover"
           src="./assets/heading_optmized.webp"
@@ -66,29 +66,40 @@
         ></div>
 
         <article
-          class="absolute inset-0 md:max-w-2xl md:mx-auto py-8 px-8 flex md:px-0 md:py-0 flex-col items-start justify-center gap-6 md:gap-8"
+          class="absolute inset-0 md:max-w-7xl md:mx-auto py-8 px-8 flex items-center justify-center md:px-4 md:py-0 gap-6 md:gap-8"
         >
-          <h1
-            class="text-[#E2E3DB] font-semibold text-2xl md:text-5xl tracking-[-2.4px]"
-          >
-            Seu PC está lento ou travando? Então está mais que na hora de uma
-            manutenção preventiva!
-          </h1>
-          <p>
-            Aqui o seu PC receberá o tratamento adequado e sairá completamente
-            <strong class="font-semibold">renovado</strong>. <strong class="font-semibold">Não perca tempo</strong>, entre em contato agora e usufrua do
-            melhor serviço técnico a um preço acessível.
-          </p>
-          <a
-            href="#contato" class="bg-[#E2E3DB] text-[#151515] hover:bg-[#151515] hover:text-[#E2E3DB] font-semibold cursor-pointer rounded-[8px] py-3 px-14
-            transition duration-300"
-          >
-            Entrar em contato
-          </a>
+          <div class="hidden md:block max-w-1/2 flex-1/4">
+            <img class="select-none pointer-events-none object-fill h-full w-full" src="./assets/DS_manutencao_banner.png" alt="Logo">
+          </div>
+          <div class="flex flex-col flex-1/2 items-start justify-center gap-6 md:gap-8">
+            <h1
+              class="text-[#E2E3DB] font-semibold text-2xl md:text-3xl lg:text-4xl tracking-[-2.4px]"
+            >
+              Seu PC está lento ou travando? Então está mais que na hora de uma
+              manutenção preventiva!
+            </h1>
+            <p>
+              Aqui o seu PC receberá o tratamento adequado e sairá completamente
+              <strong class="font-semibold">renovado</strong>.<br>
+              Não perca tempo, entre em
+              contato agora e usufrua do melhor serviço técnico a um preço
+              <strong class="font-semibold">acessível</strong>.
+            </p>
+            <a
+              href="#contato"
+              class="self-start w-full md:w-fit text-center bg-[#E2E3DB] text-[#151515] hover:bg-[#151515] hover:text-[#E2E3DB] font-semibold cursor-pointer rounded-[8px] py-3 px-14 transition duration-300"
+            >
+              Entrar em contato
+            </a>
+          </div>
+          
         </article>
       </section>
 
-      <section id="servicos" class="flex gap-20 items-center justify-start pl-6 md:pl-0 md:justify-center min-h-80 md:h-svh w-full md:max-w-7xl">
+      <section
+        id="servicos"
+        class="flex gap-20 items-center justify-start px-6 md:px-0 md:justify-center min-h-80 md:h-svh w-full md:max-w-7xl"
+      >
         <div class="hidden md:block">
           <svg class="svg">
             <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
@@ -100,8 +111,10 @@
 
           <div class="clipped services_image h-[400px] w-[350px]"></div>
         </div>
-        <article class="flex flex-col gap-6">
-          <h2 class="font-semibold text-[#E2E3DB] text-xl md:text-2xl">SERVIÇOS</h2>
+        <article class="flex flex-col gap-6 w-full md:w-auto">
+          <h2 class="font-semibold text-[#E2E3DB] text-xl md:text-2xl">
+            SERVIÇOS
+          </h2>
           <ul class="list-disc list-inside">
             <li>Montagem de computadores comuns ou gamers</li>
             <li>Manutenção e limpeza</li>
@@ -110,31 +123,40 @@
           </ul>
         </article>
       </section>
+      <!--PREÇOS-->
+      <section
+        class="flex gap-20 items-center justify-start px-6 md:px-0 md:justify-center min-h-80 md:h-svh w-full md:max-w-7xl"
+      >
+        <article class="flex flex-col gap-6 w-full md:w-auto">
+          <h2 class="font-semibold text-[#E2E3DB] text-xl md:text-2xl">
+            TABELA DE PREÇOS
+          </h2>
+          <ul class="list-inside">
+            <li><strong>MANUTENÇÃO</strong>: valor baseado no conserto</li>
+            <li><strong>LIMPEZA</strong>: R$ 80</li>
+            <li><strong>MONTAGEM</strong>: R$ 100 PC Comum, R$ 180 PC Gamer</li>
+            <li>
+              <strong>FORMATAÇÃO</strong>: R$ 50 sem backup, R$ 100 com backup
+            </li>
+          </ul>
+        </article>
+        <div class="hidden md:block">
+          <svg class="svg">
+            <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
+              <path
+                d="M1,0.858 L0.602,1 L0,0.775 V0.001 L0.613,0.183 L1,0.056 V0.858"
+              ></path>
+            </clipPath>
+          </svg>
 
-       <section class="flex gap-20 items-center justify-start pl-6 md:pl-0 md:justify-center min-h-80 md:h-svh w-full md:max-w-7xl">
-         <article class="flex flex-col gap-6">
-           <h2 class="font-semibold text-[#E2E3DB] text-xl md:text-2xl">TABELA DE PREÇOS</h2>
-           <ul class="list-inside">
-             <li><strong>MANUTENÇÃO</strong>: valor baseado no conserto</li>
-             <li><strong>LIMPEZA</strong>: R$ 80</li>
-             <li><strong>MONTAGEM</strong>: R$ 100 PC Comum, R$ 180 PC Gamer</li>
-             <li><strong>FORMATAÇÃO</strong>: R$ 50 sem backup,  R$ 100 com backup</li>
-            </ul>
-          </article>
-          <div class="hidden md:block">
-            <svg class="svg">
-              <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
-                <path
-                  d="M1,0.858 L0.602,1 L0,0.775 V0.001 L0.613,0.183 L1,0.056 V0.858"
-                ></path>
-              </clipPath>
-            </svg>
-  
-            <div class="clipped prices_image  h-[400px] w-[350px]"></div>
-          </div>
+          <div class="clipped prices_image h-[400px] w-[350px]"></div>
+        </div>
       </section>
-
-       <section id="contato" class="flex gap-20 items-center justify-start pl-6 md:pl-0 md:justify-center min-h-80 md:h-svh w-full md:max-w-7xl">
+      <!--COMTATO-->
+      <section
+        id="contato"
+        class="flex items-center justify-start md:justify-center px-6 md:px-0 gap-20 min-h-80 md:h-svh w-full md:max-w-7xl"
+      >
         <div class="hidden md:block">
           <svg class="svg">
             <clipPath id="my-clip-path" clipPathUnits="objectBoundingBox">
@@ -146,19 +168,38 @@
 
           <div class="clipped contact_image h-[400px] w-[350px]"></div>
         </div>
-        <article class="flex flex-col gap-6">
-          <h2 class="font-semibold text-[#E2E3DB] text-xl md:text-2xl">CONTATO</h2>
-          <p>Entre em contato e dê uma sobrevida ao seu PC.<br>Faça já seu orçamento e venha pro melhor.</p>
+        <article class="flex flex-col gap-6 w-full md:w-auto">
+          <h2 class="font-semibold text-[#E2E3DB] text-xl md:text-2xl">
+            CONTATO
+          </h2>
+          <p>
+            Entre em contato e dê uma sobrevida ao seu PC.<br />Faça já seu
+            orçamento e venha pro melhor.
+          </p>
 
           <div class="space-y-2">
-            <a id="contact-w" href="" target="_blank" class="flex w-fit gap-4 bg-[#E2E3DB] hover:bg-[#151515] hover:text-[#E2E3DB] text-[#151515] transition duration-300 font-semibold cursor-pointer rounded-[8px] py-2 px-14"><i data-lucide="phone"></i><span>Whatsapp</span></a>
-            <a id="contact-i" href="" target="_blank" class="flex w-fit gap-4 bg-[#E2E3DB] hover:bg-[#151515] hover:text-[#E2E3DB] text-[#151515] transition duration-300 font-semibold cursor-pointer rounded-[8px] py-2 px-14"><i data-lucide="instagram"></i><span>Instagram</span></a>
+            <a
+              id="contact-w"
+              href=""
+              target="_blank"
+              class="flex gap-4 md:w-fit justify-center bg-[#E2E3DB] hover:bg-[#151515] hover:text-[#E2E3DB] text-[#151515] transition duration-300 font-semibold cursor-pointer rounded-[8px] py-2 px-14"
+              ><i data-lucide="phone"></i><span>Whatsapp</span></a
+            >
+            <a
+              id="contact-i"
+              href=""
+              target="_blank"
+              class="flex gap-4 md:w-fit justify-center bg-[#E2E3DB] hover:bg-[#151515] hover:text-[#E2E3DB] text-[#151515] transition duration-300 font-semibold cursor-pointer rounded-[8px] py-2 px-14"
+              ><i data-lucide="instagram"></i><span>Instagram</span></a
+            >
           </div>
         </article>
       </section>
     </main>
     <footer class="flex justify-center items-center py-6">
-      <p class="text-[#E2E3DB80] text-center">&copy;Copyright Diego Sousa<br>2025</p>
+      <p class="text-[#E2E3DB80] text-center">
+        &copy; Copyright Diego Sousa<br />2025
+      </p>
     </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>

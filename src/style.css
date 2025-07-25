@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.clipped {
+  background-size: cover;
+  -webkit-clip-path: url(#my-clip-path);
+  clip-path: url(#my-clip-path);
+}
+.services_image{
+  background-image: url('/assets/services_optmized.webp');
+  background-position: center;
+}
+.prices_image{
+  background-image: url('/assets/precos_optmized.webp');
+  background-position: center;
+}
+.contact_image{
+   background-image: url('/assets/DS-logo-white.png');
+   background-position: center;
+}
